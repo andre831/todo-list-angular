@@ -1,0 +1,73 @@
+@import "../../styles/global.scss";
+
+.table-container {
+  .table {
+    width: 100%;
+
+    &__body {
+      padding: 10px;
+
+      table {
+        margin: 0;
+        border-radius: 10px;
+        thead,
+        tbody {
+          tr {
+            display: flex;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 10px;
+            background: $creme-de-menthe;
+
+            th,
+            td {
+              width: 300px;
+              display: flex;
+              justify-content: center;
+              flex-direction: row;
+              align-items: center;
+            }
+          }
+        }
+
+        tbody {
+          tr td:nth-child(4) {
+            .options {
+              width: 90px;
+              display: flex;
+              justify-content: space-between;
+
+              button i:hover {
+                color: $konkikyo-blue;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .status {
+    width: 105px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid;
+  }
+
+  .status-a {
+    @extend .status;
+    color: $konkikyo-blue;
+    border-color: $konkikyo-blue;
+    background-color: #628fc377;
+  }
+
+  .status-b {
+    @extend .status;
+    color: #ff0000;
+    border-color: #ff0000;
+    background-color: #ff9900bb;
+  }
+}
