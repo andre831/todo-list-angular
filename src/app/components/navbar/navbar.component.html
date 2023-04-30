@@ -1,0 +1,16 @@
+<div class="navbar-container">
+  <div class="navbar">
+    <div class="navbar__logo">
+      <h2>TODO</h2>
+    </div>
+    <div class="navbar__body">
+      <ul>
+        <li *ngFor="let n of navegation">
+          <a [routerLink]="n.path">
+            {{ n.title }}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
