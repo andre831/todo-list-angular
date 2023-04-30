@@ -9,14 +9,7 @@ import { NavbarNavegation } from 'src/app/types/Navbar';
 export class NavbarComponent {
   navegation: NavbarNavegation[] = [
     {
-      title: 'Home',
-      path: '',
-    },
-    {
-      title: 'Home',
-      path: '',
-    },
-    {
+      icon: 'fa-solid fa-house',
       title: 'Home',
       path: '',
     },

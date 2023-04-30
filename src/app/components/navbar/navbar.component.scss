@@ -1,15 +1,66 @@
+@import "../../styles/global.scss";
+
 .navbar-container {
   .navbar {
     width: 100%;
+    padding: 0 10px;
+    position: fixed;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: $primary-color;
+
+    @include break-up(map-get($breakpoints, "lg")) {
+      width: 4vw;
+      top: 0;
+      bottom: 0;
+      flex-direction: column-reverse;
+    }
+
+    &__logo {
+      h2 {
+        color: $misty-isle;
+        letter-spacing: 2px;
+
+        @include break-up(map-get($breakpoints, "lg")) {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+      }
+    }
 
     &__body {
       width: 10vw;
+
       ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: end;
+
+        @include break-up(map-get($breakpoints, "lg")) {
+          justify-content: center;
+        }
+
+        li {
+          a {
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            padding: 10px;
+            color: $misty-isle;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-decoration: none;
+            transition: 0.3s ease;
+          }
+          &:hover {
+            a {
+              color: $primary-color;
+              background: $creme-de-menthe;
+            }
+          }
+        }
       }
     }
   }

@@ -1,16 +1,16 @@
-<div class="navbar-container">
+<header class="navbar-container">
   <div class="navbar">
     <div class="navbar__logo">
-      <h2>TODO</h2>
+      <h2>TO DO</h2>
     </div>
     <div class="navbar__body">
       <ul>
         <li *ngFor="let n of navegation">
           <a [routerLink]="n.path">
-            {{ n.title }}
+            <i [ngClass]="n.icon"></i>
           </a>
         </li>
       </ul>
     </div>
   </div>
-</div>
+</header>
