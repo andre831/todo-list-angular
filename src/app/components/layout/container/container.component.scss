@@ -6,8 +6,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @include break-up(map-get($breakpoints, "lg")) {
-    width: 64vw;
-  }
 }

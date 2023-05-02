@@ -8,6 +8,7 @@ import { NavbarComponent } from './components/layout/navbar/navbar.component';
 import { ContainerComponent } from './components/layout/container/container.component';
 import { DescriptionComponent } from './components/description/description.component';
 import { TableComponent } from './components/table/table.component';
+import { DocumentComponent } from './view/document/document.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { TableComponent } from './components/table/table.component';
     ContainerComponent,
     DescriptionComponent,
     TableComponent,
+    DocumentComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

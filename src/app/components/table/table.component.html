@@ -4,6 +4,7 @@
       <table>
         <thead>
           <tr>
+            <th>Id</th>
             <th>Name</th>
             <th>Status</th>
             <th>Date</th>
@@ -11,19 +12,20 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>John Doe</td>
+          <tr *ngFor="let d of data">
+            <td>{{ d.id }}</td>
+            <td>{{ d.title }}</td>
             <td>
-              <span class="status-a">Done</span>
+              <span class="status-a">{{ d.status }}</span>
             </td>
-            <td>2023-04-30</td>
+            <td>{{ d.date }}</td>
             <td>
               <div class="options">
                 <button>
                   <i class="fa-solid fa-pen-to-square"></i>
                 </button>
                 |
-                <button>
+                <button (click)="delete(d.id ? d.id : 0)">
                   <i class="fa-solid fa-trash"></i>
                 </button>
               </div>

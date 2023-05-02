@@ -1,0 +1,41 @@
+@import "../../styles/global.scss";
+
+.document-container {
+  width: 100%;
+  .document {
+    width: 100%;
+    display: flex;
+
+    &__body {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-weight: bold;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        display: flex;
+        padding: 10px;
+        min-height: 60px;
+        border-radius: 10px;
+        outline: none;
+        color: $konkikyo-blue;
+        border: 1px solid $primary-color;
+        transition: 0.5s;
+
+        &:hover,
+        &:focus {
+          background: #628fc323;
+        }
+      }
+    }
+  }
+}

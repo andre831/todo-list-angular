@@ -1,0 +1,24 @@
+<main class="document-container">
+  <div class="document">
+    <div class="document__body">
+      <label for="title">Task name</label>
+      <input type="text" name="title" placeholder="Type your task name" />
+
+      <label for="status"> Select a status for task </label>
+      <select name="status">
+        <option value="pending">Pending</option>
+        <option value="done">Done</option>
+      </select>
+
+      <label for="description">Description</label>
+      <textarea
+        type="text"
+        name="title"
+        placeholder="Describe yout task"
+        rows="10"
+      ></textarea>
+
+      <button (click)="create(doc)">SAVE</button>
+    </div>
+  </div>
+</main>
